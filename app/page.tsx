@@ -19,9 +19,15 @@ export default function HomePage() {
           </p>
 
           <div className="flex gap-4 justify-center mb-16">
+            <Link href="/bot">
+              <Button size="lg" className="neon-border">
+                <Bot className="w-5 h-5 mr-2" />
+                Start Bot
+              </Button>
+            </Link>
             {botInviteUrl && (
               <a href={botInviteUrl} target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="neon-border">
+                <Button size="lg" variant="outline" className="glass-card border-primary/20 bg-transparent">
                   <Bot className="w-5 h-5 mr-2" />
                   Invite Bot
                 </Button>
